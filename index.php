@@ -12,10 +12,7 @@
 
 <?php
     require 'bd.php';
-    $sql = 'SELECT * FROM users';
-    $statement = $pdo->prepare($sql);
-    $statement->execute();
-    $users = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $users = spisok();
 ?>
 
 

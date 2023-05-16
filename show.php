@@ -1,10 +1,7 @@
 
 <?php
-    require 'bd.php';
-    $sql = 'SELECT * FROM users WHERE id=:id';
-    $statement = $pdo->prepare($sql);
-    $statement->execute($_GET);
-    $users = $statement->fetchAll(PDO::FETCH_ASSOC);
+   require 'bd.php';
+   $users = show();
 ?>
 
 <!doctype html>
