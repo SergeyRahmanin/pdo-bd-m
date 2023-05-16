@@ -11,7 +11,7 @@
 
 
 <?php
-    require 'connect.php';
+    require 'bd.php';
     $sql = 'SELECT * FROM users';
     $statement = $pdo->prepare($sql);
     $statement->execute();

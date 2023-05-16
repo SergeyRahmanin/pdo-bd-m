@@ -1,5 +1,5 @@
 <?php
-    require 'connect.php';
+    require 'bd.php';
     $sql = 'SELECT * FROM users WHERE id=:id';
     $statement = $pdo->prepare($sql);
     $statement->execute($_GET);
